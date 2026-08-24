@@ -41,7 +41,7 @@ namespace hacore {
     /*
       LAUNCHER ... forks REAPER, returns immediately
         └─REAPER ... subreaper; reaps GAME + orphans, exits with GAME status
-           └─GAME ... runs cmd via /bin/sh in its own process group
+          └─GAME .... runs cmd via /bin/sh in its own process group
     */
 
     pid_t supervisor = fork();
